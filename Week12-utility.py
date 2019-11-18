@@ -19,4 +19,14 @@ def LoadFile(filename):
             newoutput[val] = ''.join(output)
     return newoutput
     
+def UpdateString(x, y, z):
+    x = list(x)
+    newx = []
+    for val in range(0, len(x)):
+        if val != z:
+            newx.append(x[val])
+        else:
+            newx.append(y)
+    newx = ''.join(newx)
+    PrintOutput(newx)
     
