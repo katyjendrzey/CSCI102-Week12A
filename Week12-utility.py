@@ -36,3 +36,11 @@ def FindWordCount(x, y):
         if x[i] == y:
             wordcount += 1
     PrintOutput(wordcount)
+
+def Union(x, y):
+    newlist = []
+    for i in range(0, len(x)):
+        newlist.append(x[i])
+    for j in range(0, len(y)):
+        newlist.append(y[j])
+    return newlist
