@@ -29,4 +29,10 @@ def UpdateString(x, y, z):
             newx.append(y)
     newx = ''.join(newx)
     PrintOutput(newx)
-    
+
+def FindWordCount(x, y):
+    wordcount = 0
+    for i in range(0, len(x)):
+        if x[i] == y:
+            wordcount += 1
+    PrintOutput(wordcount)
