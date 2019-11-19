@@ -70,7 +70,7 @@ def ScoreFinder(x, y, z):
     else:
         a = x2.index(z2)
     if existence == True:
-        PrintOutput(f"{z} got a score of {y[a]}")
+        PrintOutput(f"{x[a]} got a score of {y[a]}")
     else:
         PrintOutput('player not found')
     
