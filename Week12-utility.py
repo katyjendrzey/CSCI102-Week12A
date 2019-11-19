@@ -44,3 +44,34 @@ def Union(x, y):
     for j in range(0, len(y)):
         newlist.append(y[j])
     return newlist
+
+def Intersection(x, y):
+    finallist = []
+    for i in range(0, len(x)):
+        if x[i] in y:
+            finallist.append(x[i])
+    return finallist
+
+def NotIn(x, y):
+    finallist = []
+    for i in range(0, len(x)):
+        if x[i] not in y:
+            finallist.append(x[i])
+    return finallist
+
+def ScoreFinder(x, y, z):
+    x2 = []
+    z2 = z.lower()
+    existence = True
+    for index in range(0, len(x)):
+        x2.append(x[index].lower())
+    if z2 not in x2:
+        existence = False
+    else:
+        a = x2.index(z2)
+    if existence == True:
+        PrintOutput(f"{z} got a score of {y[a]}")
+    else:
+        PrintOutput('player not found')
+    
+            
